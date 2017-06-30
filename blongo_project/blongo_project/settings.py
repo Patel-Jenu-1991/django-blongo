@@ -88,6 +88,9 @@ SESSION_ENGINE = 'mongoengine.django.sessions'
 
 MONGO_DATABASE_NAME = 'blongo'
 
+from mongoengine import connect
+connect(MONGO_DATABASE_NAME)
+
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
